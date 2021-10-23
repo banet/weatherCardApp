@@ -53,13 +53,17 @@ const getCity = async (city) => {
     return data[0]
 }
 // Enter the city and get data, then return weather with key for the city, Then return all togehter city + weather
-getCity('manchester').then(data => {
-    return getWeather(data.Key)
-})
-.then(data => {
-    console.log(data)
-})
-.catch(err => console.log(err))
+// This request we are going to recreate on UI side from input form
+// getCity('manchester').then(data => {
+//     return getWeather(data.Key)
+// })
+// .then(data => {
+//     console.log(data)
+// })
+// .catch(err => console.log(err))
+
+
+
 
 // Here we deside to use first element 
 // getCity('manchester')
