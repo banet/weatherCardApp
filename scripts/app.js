@@ -3,6 +3,8 @@
 const cityForm = document.querySelector('form')
 const card = document.querySelector('.card')
 const details = document.querySelector('.details')
+const time = document.querySelector('img.time')
+const icon = document.querySelector('.icon img')
 
 
 // The idea is just to call  getCity, getWeather function inside updateCity
@@ -40,10 +42,11 @@ function addCityApi(e) {
 // Update UI 
 //Wil be responsilbe for taking in some data and output in it ti the browser using these referance
 const updateUI = (data) => {
-
-    const cityDets = data.cityDets
-    const weather = data.weather
-
+    // data is object for city-location and city weather  which returns and stored in previous function
+    // const cityDets = data.cityDets
+    // const weather = data.weather
+    const {cityDets, weather} = data
+    console.log(data)
     // Update details template
     details.innerHTML = `
         <h5 class="my-3">${cityDets.EnglishName}</h5>
