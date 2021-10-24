@@ -58,8 +58,22 @@ const updateUI = (data) => {
         `
 
         // remove d-none class if present
-
         if(card.classList.contains('d-none')) {
             card.classList.remove('d-none')
         } 
+
+        // update the nigh/day & icon images 
+            // This is good trick to define timeSrc variable which you can manipulate and updated with if condition and then put it in img tag !!!
+        let timeSrc = 0
+        if(weather.IsDayTime) {
+            timeSrc = 'img/day.svg'
+        } else {
+            timeSrc= 'img/night.svg'
+        }
+        // let use seleceted img and add to setAtribute !!
+        time.setAttribute('src', timeSrc)
+
+        // Update icon images
+        const iconSrc = `img/icons/${weather.WeatherIcon}.svg`
+        icon.setAttribute('src', iconSrc)
 }
