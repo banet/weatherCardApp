@@ -1,7 +1,7 @@
 
 // API KEY from Accu Weather API'S : https://developer.accuweather.com/user/me/apps
 // Note! You can request only 50 times with this key, if youu need more request than you delete app and create to get new API which you 
-const key = 'eQvt8LWvG6YGVv2nVytB2zZnwRhQQ6Yu'
+const key = 'DcqsCRHCuzA8AS76jqNz1bXqXtPVZcAh'
 
 /*Guide
 1. First we need to make request to a certain end point to get city information and in that in for is going to be city code
